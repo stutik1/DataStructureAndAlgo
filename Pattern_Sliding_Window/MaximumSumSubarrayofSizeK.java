@@ -2,7 +2,7 @@
 //Given an array of positive numbers and a positive number ‘k’, find the maximum sum of any contiguous subarray of size ‘k’.
 package Pattern_Sliding_Window;
 public class MaximumSumSubarrayofSizeK {
-    public static int maximumSumSubArray_BruteForce(int[] arr,int k) {
+    public static int maximumSumSubArrayBruteForce(int[] arr,int k) {
         if (arr.length == 0 || k <= 0 || k > arr.length) {
             return 0;
         }
@@ -21,8 +21,8 @@ public class MaximumSumSubarrayofSizeK {
     }
         ///// method 2 ////////
 
-            public static int maximumSumSubArrayofSizeK(int[] arr,int k) {
-                if(arr.length==0 || k <=0 || k>arr.length ){
+         public static int maximumSumSubArrayofSizeK(int[] arr,int k) {
+           if(arr.length==0 || k <=0 || k>arr.length ){
                     return 0;
                 }
         int sum=0;
@@ -44,10 +44,10 @@ public class MaximumSumSubarrayofSizeK {
 
     public static void main(String[] args){
         int [] arr={2, 1, 5, 1, 3, 2};
-        System.out.println(maximumSumSubArray_BruteForce(arr,3));
-        System.out.println(maximumSumSubArray_BruteForce(arr,2)); //
-        System.out.println(maximumSumSubArray_BruteForce(new int [] {2, 3, 4, 1, 5} , 2));
-        System.out.println(maximumSumSubArray_BruteForce(new int [] {2, 3, 4, 1, 5,3} , 3));
+        System.out.println(maximumSumSubArrayBruteForce(arr,3));
+        System.out.println(maximumSumSubArrayBruteForce(arr,2)); //
+        System.out.println(maximumSumSubArrayBruteForce(new int [] {2, 3, 4, 1, 5} , 2));
+        System.out.println(maximumSumSubArrayBruteForce(new int [] {2, 3, 4, 1, 5,3} , 3));
     }
 }
 
