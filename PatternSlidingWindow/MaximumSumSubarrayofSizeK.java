@@ -1,6 +1,6 @@
 //Problem Statement #
 //Given an array of positive numbers and a positive number ‘k’, find the maximum sum of any contiguous subarray of size ‘k’.
-package Pattern_Sliding_Window;
+package PatternSlidingWindow;
 public class MaximumSumSubarrayofSizeK {
     public static int maximumSumSubArrayBruteForce(int[] arr,int k) {
         if (arr.length == 0 || k <= 0 || k > arr.length) {
