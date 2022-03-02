@@ -3,6 +3,7 @@ package PatternTwoPointers;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.LinkedHashSet;
+import java.util.Set;
 
 public class RemoveDuplicateOfUnSortedArray {
 
@@ -36,7 +37,15 @@ public class RemoveDuplicateOfUnSortedArray {
     }
 
     public static void unSortedArrayByHashSet(int[] arr ) {
-        HashSet <Integer> set = new HashSet<>();
+        Set <Integer> set = new HashSet<>();
+        for (int i=0;i< arr.length;i++){
+            set.add(arr[i]);
+            System.out.println(set);
+        }
+    }
+
+    public static void unSortedArrayByLinkedHashSet(int[] arr ) {
+        LinkedHashSet<Integer> set = new LinkedHashSet<Integer>();  // use LinkedHashSet for maintain the order of an array
         for (int i=0;i< arr.length;i++){
             set.add(arr[i]);
             System.out.print(set);
@@ -44,10 +53,11 @@ public class RemoveDuplicateOfUnSortedArray {
     }
 
     public static void main(String[] args) {
-        int[] arr = {2,2,1,5,4,7,7,3};
+        int[] arr = {2,2,1,10,5,4,7,7,3};
        // unSortedArray(arr);
        // unSortedArrayBySorting(arr);
-        unSortedArrayByHashSet(arr);
+       // unSortedArrayByHashSet(arr);
+        unSortedArrayByLinkedHashSet(arr);
 
 
     }
