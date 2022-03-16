@@ -1,5 +1,8 @@
 package PatternTwoPointers;
 
+import java.util.HashSet;
+import java.util.Set;
+
 public class RemoveDuplicateOfSortedArray {
     public static void Duplicate(int arr[]) {
         int temp[] = new int[arr.length];
@@ -31,11 +34,18 @@ public class RemoveDuplicateOfSortedArray {
         }
     }
 
-
+public static void Duplicate2(int arr[]){
+    Set<Integer> set = new HashSet<>();
+    for (int i=0;i< arr.length;i++){
+        set.add(arr[i]);
+        System.out.println(set);
+    }
+}
     public static void main(String[] args) {
         int arr[] = {1,2,3,3,4};
         //Duplicate(arr);
-         Duplicate1(arr);
+       //  Duplicate1(arr);
+         Duplicate2(arr);
 
     }
 }
