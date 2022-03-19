@@ -1,3 +1,6 @@
+//Problem Statement #
+// Given an array of unsorted numbers, find all unique triplets in it that add up to zero.
+
 package PatternTwoPointers;
 
 public class TripleSumToZero {
@@ -13,12 +16,8 @@ public class TripleSumToZero {
         }
     }
 
-    public static void tripleSumToZero(int []arr){
-
-
-    }
     public static void main(String[] args) {
-        int arr[] = {0,-1, 1,2, -3};
+        int arr[] = {0,-1, 1 ,2, -3};
        // int arr[] = {0,-1, 2, -3};
         tripleSumToZeroByBruteForce(arr,0);
 
