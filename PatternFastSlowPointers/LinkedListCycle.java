@@ -3,14 +3,14 @@
 
 package PatternFastSlowPointers;
 
-public class ListNode {
-   // int val;
+ class ListNode {
+   int val;
     ListNode next;
     ListNode(int x) {
-      // val = x;
+       val = x;
    }
 }
- class LinkedListCycle {
+ public class LinkedListCycle {
     public static boolean linkedListCycle(ListNode head){
             if(head == null || head.next ==null)
                 return false;
@@ -37,8 +37,10 @@ public class ListNode {
         head.next.next.next.next.next = head.next.next;
         System.out.println(linkedListCycle(head) );
 
-        head.next.next.next.next.next = head;
+        head.next.next.next.next = head;
         System.out.println(linkedListCycle(head) );
+
+
 
 
     }
